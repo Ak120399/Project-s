@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Event Webpage</title>
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+            }
+
+            section {
+                width: 100%;
+                height: 100vh;
+                background: url(web\ background.webp);
+                background-size: cover;
+            }
+
+            section .leftBox {
+                width: 50%;
+                height: 100%;
+                float: left;
+                padding: 50px;
+                box-sizing: border-box;
+            }
+
+            section .leftBox .content {
+                color: #fff;
+                background-color: rgba(0, 0, 0, 0.5);
+                padding: 40px;
+                transition: .5s;
+            }
+
+            section .leftBox .content:hover {
+                background: #e91e63;
+            }
+
+            section .leftBox .content h1 {
+                margin: 0;
+                padding: 0;
+                text-transform: uppercase;
+                font-size: 25px;
+            }
+
+            section .leftBox .content p {
+                margin: 10px 0 0;
+                padding: 0;
+            }
+
+            section .events {
+                position: relative;
+                width: 50%;
+                height: 100%;
+                float: right;
+                box-sizing: border-box;
+                background: rgba(0, 0, 0, 0.5);
+            }
+
+            section .events ul {
+                position: absolute;
+                top: 50%;
+                margin: 0;
+                transform: translateY(-50%);
+                padding: 40px;
+                box-sizing: border-box;
+            }
+
+            section .events ul li {
+                list-style: none;
+                box-sizing: border-box;
+                margin: 15px 0;
+                height: 200px;
+                background: #fff;
+            }
+
+            section .events ul li .website {
+                padding: 20px;
+                position: relative;
+                background: #262626;
+                width: 30%;
+                height: 100%;
+                float: left;
+                box-sizing: border-box;
+                transform: .5s;
+                text-align: center;
+            }
+
+            section .events ul li:hover .website {
+                background: #e91e63;
+            }
+
+            section .events ul li .website h2 {
+                position: absolute;
+                margin: 0;
+                padding: 0;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                color: #fff;
+                font-size: 30px;
+                line-height: 30px;
+            }
+
+            section .events ul li .website a {
+                display: inline-block;
+                transform: .5s;
+            }
+
+
+            section .events ul li .details {
+                background: #fff;
+                padding: 20px;
+                width: 70%;
+                height: 100%;
+                box-sizing: border-box;
+                float: left;
+            }
+
+            section .events ul li .details p {
+                margin: 10px 0 0;
+                padding: 0;
+                font-size: 16px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <section>
+            <div class="leftBox">
+                <div class="content">
+                    <h1>Free websites to learn Front-end</h1>
+                    <p>
+                        My name is Mr.Aravind Kumar.I am learning Front-end in free resources.The free websites are 
+                        1.W3school,
+                        2.Freecodecamp,
+                        3.codeacademy.
+                        w3School give the experience of theratical explanations and pratical examples.so, W3school is very easily to understand the basica and concepts.Also you have a excercises that help you to test your skills.
+                        Freecodecamp is a fully practically explained the concepts.They have intractive lessons and small projects.they give free certificate. if you finish every set of lesson and you used  with the lesson to build one project.
+                        codeacademy is similar to freecodecamp.but in this plarform you set your level and goal, so they give the tasks depending on your level.  
+                    </p>
+                    
+                </div>
+            </div>
+            <div class="events">
+                <ul>
+                    <li>
+                        <div class="website">
+                            <a href="https://www.w3schools.com/" target="blank"> <h2 >W3school</h2> </a>
+                        </div>
+                        <div class="details">
+                            <p>We create simplified and interactive learning experiences. Learning web development should be easy to understand and available for everyone,
+                             everywhere! W3Schools is a school for web developers, covering all the aspects of web development</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="website">
+                            <a href="https://www.freecodecamp.org/" target="blank"> <h2>Freecodecamp</h2> </a>
+                        </div>
+                        <div class="details">
+                            <p>freeCodeCamp (also referred to as Free Code Camp) is a non-profit organization that consists of an interactive learning web platform, an online community forum, chat rooms, 
+                                online publications and local organizations that intend to make learning software development accessible to anyone.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="website">
+                           <a href="https://www.codecademy.com/pages/paid-plans" target="blank"> <h2>Codeacademy</h2> </a>
+                        </div>
+                        <div class="details">
+                            <p>Codecademy is an American online interactive platform that offers free coding classes in 12 different programming languages including Python, Java, Go, JavaScript, Ruby, SQL, C++, C#, and Swift, as well as markup languages HTML and CSS. 
+                                The site also offers a paid "Pro" option that gives users access to personalized learning plans, quizzes, and realistic projects.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </body>
+</html>

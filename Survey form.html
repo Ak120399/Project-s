@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Survey Form</title>
+        <style>
+            body{
+                font-family:Verdana, Geneva, Tahoma, sans-serif;
+                background-color: #7766;
+                text-align: center;
+            }
+
+            form {
+                background-color:rgba(139, 156, 124, 0.4);
+                max-width: 500px;
+                padding: 30px 20px;
+                margin: 50px auto;
+                box-shadow: 2px 4px 8px  rgba(0, 0, 0, 0.5);
+
+            }
+
+            fieldset {
+                border: none;
+            }
+
+            .data {
+                text-align: left;
+                margin-bottom: 25px;
+            }
+
+            .data label {
+                display: block;
+                margin-bottom: 10px; 
+            }
+
+            .data input,
+            .data select,
+            .data textarea {
+                border: 1px solid #7766;
+                border-radius: 2px;
+                width: 95%;  
+                font-family: inherit;
+                padding: 10px;
+                display: block;
+                margin-bottom: 25px;
+            }
+
+            .data input[type="radio"],
+            .data input[type="checkbox"] {
+                display: inline-block;
+                width: auto;
+            }
+            
+            button{
+                background-color: rgba(224, 224, 211, 0.4);
+                border: 1px solid #7766;
+                border-radius: 2px;
+                margin-top: 50px;
+                margin-bottom: 20px;
+                font-family: inherit;
+                font-size: 20px;
+                display: inline-block;
+                width: 100%;
+                padding: 16px 32px;
+                opacity: 0.6;
+                transition: 0.3s;
+                cursor: pointer;
+            }
+
+            .button:hover {opacity:1}
+
+            legend{margin-bottom: 30px;}
+
+            label.rate{margin-bottom: 30px;}
+        </style>
+    </head>
+    <body>
+        <header class="header">
+            <h1>Customer Survey Form</h1>
+        </header>
+
+        <div class="quote">
+            <p>we want to improve our services for your convinence!  so kindly give your input's.</p>
+        </div>
+        <form id="form">
+            <fieldset class="data">
+                <label for="name">Name:</label>
+                <input class="name" type="text" name="name" placeholder="Enter Your Name" />
+
+                <label for="birth">Date Of Birth:</label>
+                <input class="birth" type="date" name="birth" placeholder="Enter Your DOB" />
+                
+                <label for="age">Age:</label>
+                <input class="age" type="text" name="age" placeholder="Enter Your Age" />
+
+                <label for="email">E-Mail Id:</label>
+                <input class="email" type="email" name="email" placeholder="Enter your E-Mail Id" />
+
+                <label for="contact no">Contact Number:</label>
+                <input class="contact no" type="number" name="contact no" placeholder="Enter Your Contact Number" />
+
+                <label for="role">Which Option best describes you? </label>
+                <select name="role" class="role" >
+                    <option>...</option>
+                    <option value="student">Student</option>
+                    <option value="intern">Intern</option>
+                    <option value="employer">Employer</option>
+                    <option value="enterpreneur">Enterpreneur</option>
+                    <option value="other">Other</option>
+                </select>
+
+            </fieldset>
+
+            <fieldset class="data">
+                <legend>Which Section Of Our Service do we want to improve:<small>(check all that apply)</small></legend>
+
+                <label><input type="checkbox" >Food</label>
+                <label><input type="checkbox" >Grocery </label>
+                <label><input type="checkbox" >Snacks</label>
+                <label><input type="checkbox" >Dairy and Eggs</label>
+                <label><input type="checkbox" >Household Essentials</label>
+                <label><input type="checkbox" >Personal Care</label>
+                <label><input type="checkbox" >Dry Fruits</label>
+                <label><input type="checkbox" >Helath and Beauty</label>
+                <label><input type="checkbox" >Fruits and vegetables</label>
+                <label><input type="checkbox" >Gift items</label>
+
+            </fieldset>
+            <fieldset class="data">
+                <label class="rate">Please Rate Our Service:</label>
+
+                <label><input name="rating" type="radio">Excellent</label>
+                <label><input name="rating" type="radio">Good</label>
+                <label><input name="rating" type="radio">Average</label>
+                <label><input name="rating" type="radio">Bad</label>
+
+            </fieldset>
+            <fieldset class="data">
+                <label for="suggestion">Any comment or suggestion</label>
+                <textarea  name="suggestion" class="suggestion" placeholder="Enter your comment here..."> </textarea>
+            </fieldset>
+
+            <button type="submit" value="submit" class="button">Submit</button>
+        </form>
+    </body>
+</html>
